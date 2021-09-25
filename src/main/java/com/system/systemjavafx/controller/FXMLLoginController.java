@@ -91,9 +91,7 @@ public class FXMLLoginController implements Initializable {
                     if (argon2.verify(passHash, user.getPass())) {
                         JOptionPane.showMessageDialog(null, "BIENVENIDO");
                         //Redireccionamiento
-                        
-                        
-                        
+                    
                     } else {
                         JOptionPane.showMessageDialog(null, "Error de Inicio de Sesion");
                     } 
