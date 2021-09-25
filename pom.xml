@@ -46,7 +46,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>com.system.systemjavafx.App</mainClass>
+                    <mainClass>com.system.systemjavafx.Main</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -117,7 +117,7 @@
                       <manifest>
                           <addClasspath>true</addClasspath>
                           <classpathPrefix>lib/</classpathPrefix>
-                          <mainClass>com.mycompany.mvnjavafx.Principal</mainClass>
+                          <mainClass>com.system.systemjavafx.Main</mainClass>
                       </manifest>
                   </archive>
               </configuration>
