@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="832.0" styleClass="paneLogin" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.systemjavafx.controller.FXMLRegisterController">
+   <children>
+      <AnchorPane layoutX="413.0" layoutY="20.0" prefHeight="344.0" prefWidth="275.0" styleClass="paneLogintwo" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label alignment="CENTER" layoutX="100.0" layoutY="130.0" text="Register" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="286.0" text="Email:" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="395.0" text="Password:" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsuario" layoutX="80.0" layoutY="236.0" prefHeight="38.0" prefWidth="265.0" promptText="muso-54" styleClass="textfieldtext">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtxEmail" layoutX="80.0" layoutY="325.0" promptText="e54@gmail.com" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></TextField>
+            <Button fx:id="btnSignUp" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" styleClass="buttonhome" text="ACCEPT" textFill="WHITE" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="108.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="23.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtPassView" layoutX="80.0" layoutY="435.0" prefHeight="38.0" prefWidth="270.0" promptText="password" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPass" layoutX="80.0" layoutY="435.0" promptText="password" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></PasswordField>
+            <ImageView fitHeight="152.0" fitWidth="120.0" layoutX="136.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login1.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.4" topOpacity="0.36" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="40.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login_email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="41.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="41.0">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login_pass.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="80.0" layoutY="360.0" prefHeight="5.0" prefWidth="265.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0" />
+            <Separator layoutX="80.0" layoutY="472.0" prefHeight="5.0" prefWidth="265.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0" />
+            <Button fx:id="btnCloseLogin" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCloseLoginOnAction" prefHeight="24.0" prefWidth="27.0" styleClass="btnCMM" AnchorPane.rightAnchor="14.0">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_close.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnloginMinimizar" layoutX="341.0" layoutY="49.0" mnemonicParsing="false" onAction="#btnloginMinimizarOnAction" styleClass="btnCMM" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="49.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_minimize.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSee" layoutX="346.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnSeeOnAction" prefHeight="31.0" prefWidth="25.0" styleClass="buttonhome" AnchorPane.bottomAnchor="106.0">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_see.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="40.0" layoutY="197.0" text="Usuario:" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Medium" size="25.0" />
+               </font>
+            </Label>
+            <Separator layoutX="80.0" layoutY="271.0" prefHeight="5.0" prefWidth="265.0" />
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="37.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/register_user.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="377.0" fitWidth="375.0" layoutX="34.0" layoutY="165.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="165.0">
+         <image>
+            <Image url="@../com/system/systemjavafx/images/login_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="69.0" layoutY="41.0" prefHeight="124.0" prefWidth="287.0" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold Italic" size="74.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReturn" layoutX="17.0" layoutY="540.0" mnemonicParsing="false" onAction="#btnReturnOnAction" styleClass="buttonhome" text="Return" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Medium" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="832.0" styleClass="paneLogin" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.system.systemjavafx.controller.FXMLLoginController">
+   <children>
+      <AnchorPane layoutX="413.0" layoutY="20.0" prefHeight="344.0" prefWidth="275.0" styleClass="paneLogintwo" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label alignment="CENTER" layoutX="100.0" layoutY="130.0" text="Login" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="194.0" text="Email:" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="303.0" text="Password:" textFill="WHITE" AnchorPane.leftAnchor="40.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtxEmail" layoutX="80.0" layoutY="233.0" promptText="e54@gmail.com" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></TextField>
+            <Button fx:id="btnSignIn" layoutX="112.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnSignInOnAction" styleClass="buttonhome" text="SignIn" textFill="WHITE" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="108.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignUp" layoutX="112.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" styleClass="buttonhome" text="SignUp" textFill="WHITE" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="108.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGit" layoutX="318.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnGitOnAction" prefHeight="42.0" prefWidth="52.0" styleClass="btnCMM" AnchorPane.rightAnchor="20.0">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_git.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnFb" layoutX="320.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnFbOnAction" prefHeight="42.0" prefWidth="52.0" styleClass="btnCMM" AnchorPane.rightAnchor="20.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_fb.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="txtPassView" layoutX="87.0" layoutY="343.0" prefHeight="38.0" prefWidth="270.0" promptText="password" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPass" layoutX="80.0" layoutY="343.0" promptText="password" styleClass="textfieldtext" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font></PasswordField>
+            <ImageView fitHeight="124.0" fitWidth="120.0" layoutX="138.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login1.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.19" topOpacity="0.18" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="40.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login_email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="41.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="41.0">
+               <image>
+                  <Image url="@../com/system/systemjavafx/images/login_pass.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="79.0" layoutY="268.0" prefHeight="5.0" prefWidth="265.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0" />
+            <Separator layoutX="79.0" layoutY="382.0" prefHeight="5.0" prefWidth="265.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="45.0" />
+            <Button fx:id="btnCloseLogin" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCloseLoginOnAction" prefHeight="24.0" prefWidth="27.0" styleClass="btnCMM" AnchorPane.rightAnchor="14.0">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_close.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btnloginMinimizar" layoutX="341.0" layoutY="49.0" mnemonicParsing="false" onAction="#btnloginMinimizarOnAction" styleClass="btnCMM" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="49.0">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_minimize.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSee" layoutX="346.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnSeeOnAction" prefHeight="31.0" prefWidth="25.0" styleClass="buttonhome" AnchorPane.bottomAnchor="198.0">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../com/system/systemjavafx/images/login_see.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <ImageView fitHeight="377.0" fitWidth="375.0" layoutX="34.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="165.0">
+         <image>
+            <Image url="@../com/system/systemjavafx/images/login_1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="17.0" layoutY="70.0" prefHeight="124.0" prefWidth="392.0" text="!WELCOME¡" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold Italic" size="74.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 sep. 2021, 12:55:57
+    Author     : Brian54
+*/
+
+.paneLogin{
+    -fx-background-color: #FFEA00;
+}
+
+.paneLogintwo{
+    -fx-background-color: #FFDD00;
+    -fx-background-radius: 40;
+}
+
+.buttonhome{
+    -fx-background-color: #FFEA00;
+    -fx-background-radius: 40;
+    -fx-border-color:white;
+    -fx-border-radius: 40;
+}
+
+.buttonhome:hover{
+    -fx-background-color : #FFDD00;
+    -fx-border-color : #FFDD00;
+}
+
+.buttonhome:pressed{
+    -fx-font-wigth: bold;
+    -fx-background-radius: 22;
+    -fx-font-color: white;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    -fx-rotate: -15;
+}
+
+.textfieldtext{
+    -fx-text-fill: white;
+    -fx-background-color: #FFDD00;
+}
+.textfieldtext:hover{
+    -fx-background-color: #FFEA00;
+}
+
+.btnCMM{
+    -fx-background-color: #FFDD00;
+}
+.btnCMM:pressed{
+    -fx-rotate:-20;
+}
